@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Name Form -->
+    <div id="welcome-screen">
+      <h1>🎓 Welcome to IKS Quiz</h1>
+      <p>Please enter your name to begin:</p>
+      <input type="text" id="username" placeholder="Your Name">
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <!-- Unit Selection -->
+    <div id="unit-selection" style="display:none;">
+      <h2 id="greeting"></h2>
+      <p>Select a Unit to start the quiz:</p>
+      <button class="unitBtn" data-unit="1">📘 Unit 1</button>
+      <button class="unitBtn" data-unit="2">📙 Unit 2</button>
+      <button class="unitBtn" data-unit="3">📗 Unit 3</button>
+    </div>
+
+    <!-- Quiz Area -->
+    <div id="quiz-area" style="display:none;">
+      <h2 id="quiz-title"></h2>
+      <div id="quiz"></div>
+      <button id="submit">Submit Quiz</button>
+      <div id="results"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
